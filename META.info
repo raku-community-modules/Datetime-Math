@@ -3,5 +3,8 @@
   "version"     : "*",
   "description" : "Add common math operations to DateTime objects.",
   "depends"     : [ ],
+  "provides"    : {
+    "DateTime::Math" : "lib/DateTime/Math.pm6"
+  },
   "source-url"    : "git://github.com/supernovus/perl6-datetime-math.git"
 }
