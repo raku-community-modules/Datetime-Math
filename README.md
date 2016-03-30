@@ -27,16 +27,17 @@ The math functions allowed are:
  * DateTime = DateTime + Seconds
  * DateTime = DateTime - Seconds
 
-~~And comparisons:~~
+~~And comparisons:
 
-~~* DateTime cmp DateTime~~
-~~* DateTime <=> DateTime~~
-~~* DateTime == DateTime~~
-~~* DateTime != DateTime~~
-~~* DateTime <= DateTime~~
-~~* DateTime < DateTime~~
-~~* DateTime >= DateTime~~
-~~* DateTime > DateTime~~
+ * DateTime cmp DateTime
+ * DateTime <=> DateTime
+ * DateTime == DateTime
+ * DateTime != DateTime
+ * DateTime <= DateTime
+ * DateTime < DateTime
+ * DateTime >= DateTime
+ * DateTime > DateTime
+~~
 
 Note: Rakudo has since implemented internal DateTime comparisons, therefore DateTime::Math's comparisons have been removed.
 
