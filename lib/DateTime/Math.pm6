@@ -87,7 +87,7 @@ multi infix:«-»(DateTime:D $dt, Numeric:D $x) is export {
 }
 
 multi infix:<->(DateTime:D $a, DateTime:D $b) is export {
-  $a.posix - $b.posix;
+  Duration.new($a.posix - $b.posix);
 }
 
 
