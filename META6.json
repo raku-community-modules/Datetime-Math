@@ -3,7 +3,7 @@
   "name"        : "DateTime::Math",
   "version"     : "0.6.0",
   "description" : "Add common math operations to DateTime objects.",
-  "authors":    : ["Timothy Totten"],
+  "authors"     : ["Timothy Totten"],
   "license"     : "Artistic-2.0",
   "depends"     : [ ],
   "provides"    : {
