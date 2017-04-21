@@ -1,8 +1,10 @@
 {
   "perl"        : "6.*",
   "name"        : "DateTime::Math",
-  "version"     : "*",
+  "version"     : "0.6.0",
   "description" : "Add common math operations to DateTime objects.",
+  "authors":    : ["Timothy Totten"],
+  "license"     : "Artistic-2.0",
   "depends"     : [ ],
   "provides"    : {
     "DateTime::Math" : "lib/DateTime/Math.pm6"
