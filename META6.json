@@ -11,5 +11,5 @@
   "provides"    : {
     "DateTime::Math" : "lib/DateTime/Math.pm6"
   },
-  "source-url"    : "git://github.com/raku-community-modules/raku-datetime-math.git"
+  "source-url"    : "git://github.com/raku-community-modules/Datetime-Math.git"
 }
