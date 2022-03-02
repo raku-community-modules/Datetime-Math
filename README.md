@@ -37,6 +37,40 @@ The math functions allowed are:
 
   * DateTime = DateTime - Seconds
 
+SUBROUTINES
+===========
+
+to-seconds
+----------
+
+Takes a value and a unit indicator and converts the value to seconds.
+
+The value must be a number, the unit string must be one of:
+
+    's'  Seconds, this is redundant it returns the string without the 's'.
+    'm'  Minutes, so 1m will return 60.
+    'h'  Hour,    so 1h will return 3600.
+    'd'  Day,     so 1d will return 86400.
+    'w'  Week,    so 1w will return 604800.
+    'M'  Month,   so 1M will return 2592000. This is based on 30 days.
+    'y'  Year,    so 1y will return 31449600. Uses a round 365 days.
+
+The Month estimation is not very accurate as it assumes 30 days regardless of month, if you need more accuracy, use a day count instead.
+
+The Year estimation is based on a round 365 days, and does not take into account leap years or anything else. Again, if you need more accuracy, use a smaller unit.
+
+from-seconds
+------------
+
+Takes a value in seconds and converts it into the specified unit.
+
+The value and unit must be specified using the same rules as `to-seconds()`.
+
+duration-from-to
+----------------
+
+Takes a value, the unit string the value is currently in, and the unit string you want to covert the value to. The value and units must be specified using the same rules as `to-seconds()`.
+
 AUTHOR
 ======
 
