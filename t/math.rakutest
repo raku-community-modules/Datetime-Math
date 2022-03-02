@@ -1,7 +1,3 @@
-use v6;
-
-use lib 'lib';
-
 use Test;
 use DateTime::Math;
 
@@ -35,3 +31,5 @@ ok !($t1 == $t2), 'DateTime == DateTime';
 is $t1 cmp $t2, 'More', 'DateTime cmp DateTime';
 is $t1 <=> $t2, 'More', 'DateTime <=> DateTime';
 ok $t1 != $t2, 'DateTime != DateTime';
+
+# vim: expandtab shiftwidth=4

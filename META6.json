@@ -1,15 +1,26 @@
 {
-    "perl"        : "6.c",
-    "meta-version" : 1,
-  "name"        : "DateTime::Math",
-  "version"     : "0.6.0",
-  "description" : "Add common math operations to DateTime objects.",
-    "authors"     : ["Timothy Totten"],
-    "auth"      : "github:raku-community-modules",
-  "license"     : "Artistic-2.0",
-  "depends"     : [ ],
-  "provides"    : {
-    "DateTime::Math" : "lib/DateTime/Math.pm6"
+  "auth": "zef:raku-community-modules",
+  "authors": [
+    "Timothy Totten"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Add common math operations to DateTime objects",
+  "license": "Artistic-2.0",
+  "meta-version": 1,
+  "name": "Datetime::Math",
+  "perl": "6.c",
+  "provides": {
+    "DateTime::Math": "lib/DateTime/Math.rakumod"
   },
-  "source-url"    : "git://github.com/raku-community-modules/Datetime-Math.git"
+  "resources": [
+  ],
+  "source-url": "git://github.com/raku-community-modules/Datetime-Math.git",
+  "tags": [
+  ],
+  "test-depends": [
+  ],
+  "version": "0.6.1"
 }

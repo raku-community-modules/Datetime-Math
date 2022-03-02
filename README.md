@@ -1,57 +1,58 @@
-# DateTime::Math
+[![Actions Status](https://github.com/raku-community-modules/Datetime-Math/workflows/test/badge.svg)](https://github.com/raku-community-modules/Datetime-Math/actions)
 
-## Description
+NAME
+====
 
-Provides to-seconds(), from-seconds(), duration-from-to() and the ability
-to perform certain math operations on DateTime objects.
+Datetime::Math - Add common math operations to DateTime objects
 
-```perl
-  use DateTime::Math;
+SYNOPSIS
+========
 
-  ## Given $dt1 and $dt2 are both DateTime objects.
+```raku
+use Datetime::Math;
 
-  my $days = from-seconds($dt2 - $dt1, 'd');
-  say "The events where $days days apart";
+# Given $dt1 and $dt2 are both DateTime objects.
+my $days = from-seconds($dt2 - $dt1, 'd');
+say "The events where $days days apart";
 
-  my $target = $dt1 + to-seconds(1, 'M');
-  say "One month after $dt1 would be $target";
+my $target = $dt1 + to-seconds(1, 'M');
+say "One month after $dt1 would be $target";
 
-  my $hours = duration-from-to(3, 'y', 'h');
-  say "3 years contains $hours hours.";
+my $hours = duration-from-to(3, 'y', 'h');
+say "3 years contains $hours hours.";
 ```
+
+DESCRIPTION
+===========
+
+Provides `to-seconds()`, `from-seconds()`, `duration-from-to()` and the ability to perform certain math operations on DateTime objects.
 
 The math functions allowed are:
 
- * Seconds = DateTime + DateTime
- * Seconds = DateTime - DateTime
- * DateTime = DateTime + Seconds
- * DateTime = DateTime - Seconds
+  * Seconds = DateTime + DateTime
 
-~~And comparisons:~~
+  * Seconds = DateTime - DateTime
 
- * ~~DateTime cmp DateTime~~
- * ~~DateTime <=> DateTime~~
- * ~~DateTime == DateTime~~
- * ~~DateTime != DateTime~~
- * ~~DateTime <= DateTime~~
- * ~~DateTime < DateTime~~
- * ~~DateTime >= DateTime~~
- * ~~DateTime > DateTime~~
+  * DateTime = DateTime + Seconds
 
-Note: Rakudo has since implemented internal DateTime comparisons, therefore DateTime::Math's comparisons have been removed.
+  * DateTime = DateTime - Seconds
 
-Note that all of the math operations on DateTime objects are using the
-POSIX time, which is stored as seconds, so it does not support sub-second
-math at this time.
+AUTHOR
+======
 
-## Author
+Timothy Totten
 
- * [Timothy Totten](https://github.com/supernovus/)
+CONTRIBUTIONS BY
+================
 
-## Contributions by 
- * [Clifton Wood](https://github.com/Xliff/)
+Clifton Wood
 
-## License
+COPYRIGHT AND LICENSE
+=====================
 
-[Artistic License 2.0](http://www.perlfoundation.org/artistic_license_2_0)
+Copyright 2013 - 2017 Timothy Totten
+
+Copyright 2018 - 2022 Raku Community
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
