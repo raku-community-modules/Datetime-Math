@@ -1,4 +1,9 @@
 Revision history for Datetime::Math
 
 {{$NEXT}}
+
+0.6.1  2022-03-02T15:23:17+01:00
     - First version in the zef ecosystem
+    - Removed mention of ops now supported by Raku
+    - Removed mention of posix integers, as partial seconds are
+      now also supported by Raku
